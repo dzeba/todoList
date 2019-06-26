@@ -1,0 +1,36 @@
+
+.mainMenu{
+  list-style: none;
+  text-align: center;
+
+
+}
+.mainMenu__item{
+  display: inline-block;
+  font-size: 18px;
+
+  font-weight: bold;
+  line-height: 30px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid transparent 2px;
+}
+.mainMenu__itemLink{
+  color: black;
+  font-family: "Proxima Nova", sans-serif;
+  text-decoration: none;
+}
+.App{
+  width: 100%;
+  background-size: 100%;
+  padding-bottom: 60px;
+  background: #60606e url(./img/bg_header.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 800px;
+
+}
