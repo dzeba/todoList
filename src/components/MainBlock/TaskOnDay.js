@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { isLoadingSelector } from "../../ducks/todos";
 import { fetchTask } from "../../ducks/todos";
 
-import "./todo.css";
+import "../TodoList/todo.css";
 
 class TaskOnDay extends React.Component {
   componentDidMount() {

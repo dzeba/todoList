@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { saveName } from "../../ducks/todos";
-import TodoForm from "./TodoForm";
-import "./todo.css";
+import TodoForm from "../TodoList/TodoForm";
+import "../TodoList/todo.css";
 
 class EditProduct extends React.Component {
   render() {

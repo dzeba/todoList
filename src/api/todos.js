@@ -8,11 +8,11 @@ export function getOne() {
 }
 
 export function getAll() {
-  return axios.get(`${BASE_URL}/todos`).then(({ data }) => data);
+  return axios.get(`${BASE_URL}/todos`).then(extractData);
 }
 
 export function create(newItem) {
-  return axios.post(`${BASE_URL}/todos`, newItem).then(({ data }) => data);
+  return axios.post(`${BASE_URL}/todos`, newItem).then(extractData);
 }
 export function saveName(name) {
   return axios
@@ -28,5 +28,5 @@ export function getTask() {
   return axios.get(`${BASE_URL}/task/1`).then(extractData);
 }
 export function deleteItem(itemId) {
-  return axios.delete(`${BASE_URL}/todos/${itemId}`).then(({ data }) => data);
+  return axios.delete(`${BASE_URL}/todos/${itemId}`).then(extractData);
 }

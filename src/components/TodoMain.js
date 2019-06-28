@@ -1,13 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
+import ShowTodo from "./TodoList/ShowTodo";
+import CenterBlock from "./MainBlock/CenterBlock";
+import { fetchList, fetchItem } from "../ducks/todos";
+import "./TodoList/todo.css";
 
-import List from "./List";
-import ShowTodo from "./ShowTodo";
-import Center from "./Center";
-import { fetchList, fetchItem } from "../../ducks/todos";
-import "./todo.css";
-
-class Todo extends React.Component {
+class TodoMain extends React.Component {
   componentDidMount() {
     this.props.fetchList();
     this.props.fetchItem();
@@ -20,7 +18,7 @@ class Todo extends React.Component {
     }
     return (
       <div className="todoMain">
-        <Center />
+        <CenterBlock />
         <ShowTodo />
       </div>
     );
@@ -32,4 +30,4 @@ export default connect(
     one: state.todos.one
   }),
   { fetchList, fetchItem }
-)(Todo);
+)(TodoMain);

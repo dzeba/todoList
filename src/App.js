@@ -8,8 +8,8 @@ import {
   Redirect
 } from "react-router-dom";
 
-import Todo from "./components/Todo/Todo";
-import UserName from "./components/Todo/UserName";
+import TodoMain from "./components/TodoMain";
+import UserName from "./components/MainBlock/UserName";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
 
         <Switch>
           <Route path="/todo/name" component={UserName} />
-          <Route path="/todo" component={Todo} />
+          <Route path="/todo" component={TodoMain} />
           <Redirect exact from="/" to="/todo" />
         </Switch>
       </Router>

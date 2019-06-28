@@ -2,12 +2,12 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Clock from "react-live-clock";
-import "./todo.css";
+import "../TodoList/todo.css";
 import { saveTask } from "../../ducks/todos";
-import TodoForm from "./TodoForm";
+import TodoForm from "../TodoList/TodoForm";
 import TaskOnDay from "./TaskOnDay";
 
-class Center extends React.Component {
+class CenterBlock extends React.Component {
   render() {
     return (
       <div className="centerBlock">
@@ -34,4 +34,4 @@ export default connect(
   {
     saveTask
   }
-)(Center);
+)(CenterBlock);
